@@ -58,6 +58,46 @@ document.addEventListener('DOMContentLoaded', function() {
     });
   });
 
+  // ===== CTA WHATSAPP =====
+  const whatsappButton = document.querySelector('.btn-whatsapp');
+  let whatsappToast = null;
+
+  function showWhatsAppToast() {
+    if (!whatsappToast) {
+      whatsappToast = document.createElement('div');
+      whatsappToast.className = 'whatsapp-toast';
+      whatsappToast.setAttribute('role', 'status');
+      whatsappToast.setAttribute('aria-live', 'polite');
+      whatsappToast.innerHTML = '<span class="dot" aria-hidden="true"></span><span class="text"><strong>Abrindo WhatsApp</strong>Você será redirecionado em instantes.</span>';
+      document.body.appendChild(whatsappToast);
+    }
+
+    whatsappToast.classList.add('is-visible');
+
+    window.clearTimeout(whatsappToast.hideTimer);
+    whatsappToast.hideTimer = window.setTimeout(function() {
+      whatsappToast.classList.remove('is-visible');
+    }, 1800);
+  }
+
+  if (whatsappButton) {
+    whatsappButton.addEventListener('click', function(event) {
+      event.preventDefault();
+
+      const href = whatsappButton.getAttribute('href');
+      whatsappButton.classList.add('is-launching');
+      showWhatsAppToast();
+
+      window.setTimeout(function() {
+        window.location.href = href;
+      }, 220);
+
+      window.setTimeout(function() {
+        whatsappButton.classList.remove('is-launching');
+      }, 420);
+    });
+  }
+
   // ===== SCROLL REVEAL (Adicionar classe ao entrar em viewport) =====
   const observerOptions = {
     threshold: 0.1,
