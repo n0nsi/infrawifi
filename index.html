@@ -3,6 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Infraestrutura de rede Wi-Fi profissional para residências. Conectividade estável, cobertura total e segurança garantida.">
+    <meta name="theme-color" content="#0b0b0b">
+    <meta property="og:title" content="INFRAWIFI - Infraestrutura de Rede Profissional">
+    <meta property="og:description" content="Soluções de rede Wi-Fi de alto desempenho para residências exigentes.">
+    <meta property="og:type" content="website">
     <title>INFRAWIFI - Infraestrutura de Rede Profissional</title>
     <link rel="icon" href="assets/img/favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="assets/css/style.css">
@@ -12,27 +17,27 @@
 <body>
 
 <!-- NAVBAR -->
-<nav class="navbar">
+<nav class="navbar" role="navigation" aria-label="Navegação principal">
     <div class="nav-logo">INFRAWIFI</div>
 
     <div class="links">
-        <a href="#servicos">Serviços</a>
-        <a href="#sobre">Sobre</a>
-        <a href="#cases">Cases</a>
-        <a href="#contato">Contato</a>
+        <a href="#servicos" aria-label="Ir para seção de Serviços">Serviços</a>
+        <a href="#sobre" aria-label="Ir para seção Sobre">Sobre</a>
+        <a href="#cases" aria-label="Ir para seção de Cases">Cases</a>
+        <a href="#contato" aria-label="Ir para seção de Contato">Contato</a>
     </div>
 </nav>
 
 <!-- HERO -->
 <header class="hero">
     <div class="hero-content">
-        <img src="assets/img/logo.png" alt="INFRAWIFI" class="logo">
+        <img src="assets/img/logo.png" alt="INFRAWIFI - Logo" class="logo">
         <h1>Infraestrutura Wi-Fi de alto desempenho para residências exigentes</h1>
         <p class="sub">
             Conectividade estável, cobertura total e experiência sem interrupções
         </p>
 
-        <a href="#contato" class="btn">Solicitar orçamento</a>
+        <a href="#contato" class="btn" aria-label="Solicitar orçamento - ir para contato">Solicitar orçamento</a>
     </div>
 </header>
 
@@ -42,10 +47,22 @@
         <h2>Serviços</h2>
 
         <div class="grid">
-            <div class="card">Planejamento de sinal Wi-Fi</div>
-            <div class="card">Redes Estruturadas</div>
-            <div class="card">Firewall & Segurança</div>
-            <div class="card">Suporte Técnico</div>
+            <div class="card">
+                <h3>Planejamento de sinal Wi-Fi</h3>
+                <p>Análise de cobertura e otimização de sinais para máximo desempenho em toda residência.</p>
+            </div>
+            <div class="card">
+                <h3>Redes Estruturadas</h3>
+                <p>Infraestrutura cabeada e wireless integrada com tecnologia de ponta.</p>
+            </div>
+            <div class="card">
+                <h3>Firewall & Segurança</h3>
+                <p>Proteção completa com firewall de última geração e monitoramento contínuo.</p>
+            </div>
+            <div class="card">
+                <h3>Suporte Técnico</h3>
+                <p>Atendimento especializado e suporte técnico disponível quando você precisar.</p>
+            </div>
         </div>
     </div>
 </section>
@@ -66,8 +83,10 @@
         <h2>Casos reais</h2>
 
         <div class="grid">
-            <div class="card">Em breve</div>
-           
+            <div class="card" style="opacity: 0.6;">
+                <h3>Casos em breve</h3>
+                <p>Em desenvolvimento. Histórias de sucesso estarão disponíveis em breve.</p>
+            </div>
         </div>
     </div>
 </section>
@@ -76,7 +95,7 @@
 <section id="contato" class="cta">
     <h2>Vamos estruturar sua rede?</h2>
 
-    <a class="btn" href="https://wa.me/5514997229067" target="_blank">
+    <a class="btn" href="https://wa.me/5514997229067" target="_blank" rel="noopener noreferrer" aria-label="Abrir WhatsApp em nova aba">
         Falar no WhatsApp
     </a>
 </section>
@@ -86,6 +105,6 @@
     INFRAWIFI © 2026 - Todos os direitos reservados
 </footer>
 
-<script src="assets/js/main.js"></script>
+<script src="assets/js/base.js"></script>
 </body>
 </html>
