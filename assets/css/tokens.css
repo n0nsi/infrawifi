@@ -1,0 +1,140 @@
+/* ============================================
+   DESIGN TOKENS - INFRAWIFI
+   Sistema centralizado de variáveis de design
+   ============================================ */
+
+:root {
+  /* CORES - Paleta Principal */
+  --color-dark-bg: #0b0b0b;
+  --color-dark-bg-alt: #050505;
+  --color-dark-section: #111827;
+  --color-dark-section-alt: #0f1419;
+  --color-dark-card: #161616;
+  --color-dark-card-alt: #1a1a1a;
+
+  /* CORES - Acentos */
+  --color-primary-accent: #fe911e;
+  --color-primary-accent-hover: #f07d0a;
+  --color-secondary-accent: #1d7cce;
+  --color-secondary-accent-hover: #1570c0;
+  --color-success: #2dd46f;
+  --color-success-dark: #1f9d52;
+  --color-success-light: #35e17a;
+
+  /* CORES - Neutrals */
+  --color-white: #fff;
+  --color-text-primary: #fff;
+  --color-text-secondary: #b8b8b8;
+  --color-text-tertiary: #a5a5a5;
+  --color-text-light: #d0d0d0;
+  --color-text-muted: #888;
+  --color-text-dim: #666;
+
+  /* CORES - Borders e Overlays */
+  --color-border-subtle: rgba(255, 255, 255, 0.06);
+  --color-border-light: rgba(255, 255, 255, 0.05);
+  --color-border-lighter: rgba(255, 255, 255, 0.03);
+  --color-border-accent: rgba(254, 145, 30, 0.25);
+  --color-border-accent-light: rgba(254, 145, 30, 0.2);
+  --color-border-accent-lighter: rgba(254, 145, 30, 0.1);
+  --color-overlay-dark: rgba(0, 0, 0, 0.95);
+  --color-overlay-darker: rgba(0, 0, 0, 0.85);
+
+  /* TIPOGRAFIA */
+  --font-family-primary: 'Barlow', 'Segoe UI', 'Helvetica Neue', sans-serif;
+  --font-weight-regular: 400;
+  --font-weight-semibold: 600;
+  --font-weight-bold: 700;
+  --font-weight-extrabold: 800;
+
+  /* TAMANHOS DE FONTE - Responsivos com clamp */
+  --font-size-xs: clamp(11px, 2vw, 12px);
+  --font-size-sm: clamp(12px, 2vw, 13px);
+  --font-size-base: clamp(13px, 2vw, 14px);
+  --font-size-md: clamp(14px, 2vw, 15px);
+  --font-size-lg: clamp(14px, 2.5vw, 16px);
+  --font-size-xl: clamp(16px, 2.5vw, 20px);
+  --font-size-2xl: clamp(24px, 4vw, 32px);
+  --font-size-3xl: clamp(28px, 5vw, 42px);
+  --font-size-4xl: clamp(42px, 8vw, 72px);
+
+  /* LINE HEIGHT */
+  --line-height-tight: 1.1;
+  --line-height-normal: 1.5;
+  --line-height-relaxed: 1.65;
+  --line-height-loose: 1.7;
+  --line-height-extra-loose: 1.8;
+
+  /* LETTER SPACING */
+  --letter-spacing-tight: -0.5px;
+  --letter-spacing-normal: 0px;
+  --letter-spacing-small: 0.1px;
+  --letter-spacing-md: 0.2px;
+  --letter-spacing-lg: 0.3px;
+  --letter-spacing-xl: 0.5px;
+  --letter-spacing-2xl: 1px;
+  --letter-spacing-3xl: 2px;
+
+  /* ESPAÇAMENTO */
+  --spacing-xs: 8px;
+  --spacing-sm: 12px;
+  --spacing-md: 16px;
+  --spacing-lg: 20px;
+  --spacing-xl: 24px;
+  --spacing-2xl: 28px;
+  --spacing-3xl: 32px;
+  --spacing-4xl: 40px;
+  --spacing-5xl: 48px;
+  --spacing-6xl: 60px;
+  --spacing-7xl: 70px;
+  --spacing-8xl: 90px;
+
+  /* ESPAÇAMENTO RESPONSIVO (clamp) */
+  --spacing-section: clamp(60px, 12vw, 100px);
+  --spacing-section-sm: clamp(32px, 6vw, 48px);
+  --spacing-section-lg: clamp(70px, 14vw, 90px);
+  --spacing-padding-clamp: clamp(60px, 12vw, 100px) 20px;
+
+  /* BORDER RADIUS */
+  --radius-sm: 4px;
+  --radius-md: 6px;
+  --radius-lg: 8px;
+  --radius-full: 50%;
+
+  /* SOMBRAS */
+  --shadow-sm: 0 2px 8px rgba(29, 124, 206, 0.25);
+  --shadow-md: 0 4px 16px rgba(29, 124, 206, 0.25);
+  --shadow-lg: 0 8px 24px rgba(29, 124, 206, 0.35), 0 2px 8px rgba(0, 0, 0, 0.15);
+  --shadow-xl: 0 12px 32px rgba(254, 145, 30, 0.12), 0 4px 12px rgba(0, 0, 0, 0.2);
+  --shadow-2xl: 0 16px 40px rgba(0, 0, 0, 0.35);
+
+  /* SOMBRAS - WhatsApp */
+  --shadow-whatsapp-md: 0 6px 18px rgba(31, 157, 82, 0.28), 0 0 0 1px rgba(255, 255, 255, 0.04) inset;
+  --shadow-whatsapp-lg: 0 10px 28px rgba(31, 157, 82, 0.36), 0 0 0 1px rgba(255, 255, 255, 0.05) inset;
+  --shadow-whatsapp-xl: 0 10px 30px rgba(31, 157, 82, 0.42);
+  --shadow-whatsapp-toast: 0 16px 40px rgba(0, 0, 0, 0.35);
+
+  /* TRANSIÇÕES E EASING */
+  --transition-fast: 0.25s ease;
+  --transition-md: 0.35s cubic-bezier(0.4, 0, 0.2, 1);
+  --transition-slow: 0.6s cubic-bezier(0.4, 0, 0.2, 1);
+  --transition-shine: 0.7s ease;
+
+  --easing-smooth: cubic-bezier(0.4, 0, 0.2, 1);
+  --easing-bounce: cubic-bezier(0.4, 0, 0.2, 1);
+
+  /* Z-INDEX */
+  --z-navbar: 999;
+  --z-navbar-btn: 1000;
+  --z-toast: 1200;
+
+  /* CONTAINER */
+  --container-max-width: 1100px;
+  --container-padding: 0 clamp(16px, 4vw, 32px);
+
+  /* RESPONSIVE GAPS */
+  --gap-sm: clamp(20px, 4vw, 32px);
+  --gap-md: clamp(24px, 4vw, 36px);
+  --gap-lg: clamp(28px, 5vw, 40px);
+  --gap-xl: clamp(40px, 8vw, 60px);
+}

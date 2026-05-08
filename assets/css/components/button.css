@@ -1,0 +1,64 @@
+/* BUTTON COMPONENT */
+
+.btn {
+  display: inline-block;
+  margin-top: var(--spacing-2xl);
+  padding: 14px 32px;
+  background: var(--color-secondary-accent);
+  color: var(--color-white);
+  text-decoration: none;
+  border-radius: var(--radius-md);
+  font-weight: var(--font-weight-bold);
+  font-size: clamp(14px, 2vw, 15px);
+  transition: all var(--transition-md);
+  box-shadow: 0 4px 16px rgba(29, 124, 206, 0.25);
+  border: 1px solid rgba(29, 124, 206, 0.4);
+}
+
+.btn:hover {
+  background: var(--color-secondary-accent-hover);
+  transform: translateY(-2px);
+  box-shadow: 0 8px 24px rgba(29, 124, 206, 0.35), 0 2px 8px rgba(0, 0, 0, 0.15);
+}
+
+.btn:active {
+  transform: translateY(0);
+  box-shadow: 0 2px 8px rgba(29, 124, 206, 0.25);
+}
+
+.btn:focus {
+  outline: 2px solid var(--color-primary-accent);
+  outline-offset: 2px;
+}
+
+/* WHATSAPP BUTTON VARIANT */
+.btn-whatsapp {
+  background: linear-gradient(135deg, var(--color-success) 0%, var(--color-success-dark) 100%);
+  border-color: rgba(45, 212, 111, 0.45);
+  box-shadow: var(--shadow-whatsapp-md);
+  position: relative;
+  overflow: hidden;
+}
+
+.btn-whatsapp::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(120deg, transparent 0%, rgba(255, 255, 255, 0.16) 50%, transparent 100%);
+  transform: translateX(-120%);
+  transition: transform var(--transition-shine);
+}
+
+.btn-whatsapp:hover {
+  background: linear-gradient(135deg, var(--color-success-light) 0%, #1c8f4c 100%);
+  box-shadow: var(--shadow-whatsapp-lg);
+}
+
+.btn-whatsapp:hover::before {
+  transform: translateX(120%);
+}
+
+.btn-whatsapp.is-launching {
+  transform: translateY(-1px) scale(0.98);
+  box-shadow: var(--shadow-whatsapp-xl);
+}

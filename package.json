@@ -1,0 +1,28 @@
+{
+  "name": "infrawifi-site",
+  "version": "1.0.0",
+  "description": "Professional Wi-Fi infrastructure website for premium residences",
+  "type": "module",
+  "scripts": {
+    "lint": "eslint assets/js/**/*.js",
+    "lint:fix": "eslint assets/js/**/*.js --fix",
+    "format": "prettier --write \"assets/**/*.{js,css,html}\"",
+    "validate:html": "node scripts/validate-html.js",
+    "validate:css": "node scripts/validate-css.js",
+    "quality": "npm run lint && npm run format",
+    "dev": "echo 'Open index.html in browser and use live server'",
+    "build": "echo 'Minify CSS and JS for production'"
+  },
+  "keywords": [
+    "wifi",
+    "infrastructure",
+    "network",
+    "residential"
+  ],
+  "author": "Murilo Prestes",
+  "license": "MIT",
+  "devDependencies": {
+    "eslint": "^8.50.0",
+    "prettier": "^3.0.3"
+  }
+}
