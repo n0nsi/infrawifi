@@ -5,10 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Infraestrutura de rede Wi-Fi profissional para residências. Conectividade estável, cobertura total e segurança garantida.">
     <meta name="theme-color" content="#0b0b0b">
-    <meta property="og:title" content="INFRAWIFI - Infraestrutura de Rede Profissional">
+    <meta property="og:title" content="InfraWiFi - Infraestrutura de Rede Profissional">
     <meta property="og:description" content="Soluções de rede Wi-Fi de alto desempenho para residências exigentes.">
     <meta property="og:type" content="website">
-    <title>INFRAWIFI - Infraestrutura de Rede Profissional</title>
+    <title>InfraWiFi - Infraestrutura de Rede Profissional</title>
     <link rel="icon" href="assets/img/favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="assets/css/style.css">
     <link href="https://fonts.googleapis.com/css2?family=Barlow:wght@400;600;800&display=swap" rel="stylesheet">
@@ -18,12 +18,20 @@
 
 <!-- NAVBAR -->
 <nav class="navbar" role="navigation" aria-label="Navegação principal">
-    <div class="nav-logo">INFRAWIFI</div>
+    <div class="nav-logo">InfraWiFi</div>
 
-    <div class="links">
+    <button class="nav-toggle" id="navToggle" aria-label="Abrir menu de navegação" aria-expanded="false">
+        <span></span>
+        <span></span>
+        <span></span>
+    </button>
+
+    <div class="links" id="navMenu">
         <a href="#servicos" aria-label="Ir para seção de Serviços">Serviços</a>
         <a href="#sobre" aria-label="Ir para seção Sobre">Sobre</a>
+        <a href="#profissional" aria-label="Ir para seção Profissional">Profissional</a>
         <a href="#cases" aria-label="Ir para seção de Cases">Cases</a>
+        <a href="#cobertura" aria-label="Ir para mapa de cobertura">Cobertura</a>
         <a href="#contato" aria-label="Ir para seção de Contato">Contato</a>
     </div>
 </nav>
@@ -70,23 +78,132 @@
 <!-- SOBRE -->
 <section id="sobre" class="section dark">
     <div class="container">
-        <h2>Sobre a INFRAWIFI</h2>
-        <p>
+        <h2>Sobre a InfraWiFi</h2>
+        <p class="section-intro">
             Desenvolvemos infraestrutura de rede sob medida para residências exigentes, priorizando desempenho contínuo, cobertura completa e integração com sistemas de automação.
         </p>
+        
+        <div class="about-grid">
+            <div class="about-item">
+                <h3>Expertise Técnica</h3>
+                <p>Profissionais certificados com anos de experiência em projetos de alta complexidade.</p>
+            </div>
+            <div class="about-item">
+                <h3>Desempenho Premium</h3>
+                <p>Tecnologia de ponta com vazão de dados otimizada e latência ultra-baixa.</p>
+            </div>
+            <div class="about-item">
+                <h3>Segurança Integrada</h3>
+                <p>Proteção em múltiplas camadas com monitoramento contínuo e atualizações automáticas.</p>
+            </div>
+            <div class="about-item">
+                <h3>Suporte Remoto</h3>
+                <p>Suporte especializado e configurações remotas disponíveis para otimização contínua da sua rede.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- PROFISSIONAL -->
+<section id="profissional" class="section">
+    <div class="container">
+        <h2>Quem Sou</h2>
+        
+        <div class="professional-header">
+            <img src="assets/img/muriloprestes.png" alt="Murilo Prestes - Foto de Perfil" class="professional-photo">
+            <h3>Murilo Prestes</h3>
+            <p class="professional-title">Network Specialist | Linux SysAdmin | VoIP & Infrastructure | Automation & Observability</p>
+        </div>
+
+        <div class="professional-intro">
+            <p>Mais de 7 anos de experiência em infraestrutura de redes, com foco em soluções de alto desempenho para ambientes residenciais e corporativos premium. Especialista em design, implantação e otimização de redes wireless, VoIP, Linux e automação de infraestrutura.</p>
+            <p>Fundador da InfraWiFi, empresa especializada em infraestrutura de rede de alta performance. Instrutor de tecnologia e membro ativo da comunidade de ciência e tecnologia.</p>
+        </div>
+
+        <div class="professional-grid">
+            <div class="professional-item">
+                <h4>Expertise</h4>
+                <ul>
+                    <li>Redes Wireless (Wi-Fi 5, Wi-Fi 6, UniFi)</li>
+                    <li>VoIP & PBX (Asterisk, SIP, IP PBX)</li>
+                    <li>Linux System Administration</li>
+                    <li>Google Cloud Platform (GCP)</li>
+                    <li>Automação e Monitoramento</li>
+                    <li>Troubleshooting e Otimização de Performance</li>
+                </ul>
+            </div>
+
+            <div class="professional-item">
+                <h4>Experiência Profissional</h4>
+                <ul>
+                    <li><strong>InfraWiFi</strong> — Consultor de Infraestrutura (Freelance, 2019-atual)</li>
+                    <li><strong>Kingvoice</strong> — IT Support Analyst (2021-atual)</li>
+                    <li><strong>FAESP/SENAR-SP</strong> — IT Instructor (2023-atual)</li>
+                    <li><strong>Cabonnet</strong> — Network Technician II (2020-2021)</li>
+                    <li>Mais de 100 instalações de infraestrutura de rede implementadas</li>
+                </ul>
+            </div>
+
+            <div class="professional-item">
+                <h4>Formação & Certificações</h4>
+                <ul>
+                    <li>Pós-graduação em Redes de Computadores (UTFPR, 2026-2027)</li>
+                    <li>Technologist em Segurança da Informação (FATEC, 2020)</li>
+                    <li>Certificação UniFi Wireless Specialist (Ubiquiti)</li>
+                    <li>Google Cloud certifications (Load Balancing, Cloud Computing)</li>
+                    <li>Specialization in Prompt Design & Generative AI (Google Cloud)</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="professional-footer">
+            <p>Sempre buscando evoluir técnica e profissionalmente. Disponível para projetos de infraestrutura de rede, consultoria e soluções customizadas.</p>
+        </div>
     </div>
 </section>
 
 <!-- CASES -->
 <section id="cases" class="section">
     <div class="container">
-        <h2>Casos reais</h2>
+        <h2>Projetos em Destaque</h2>
+        <p class="section-intro">Infraestrutura de rede premium implementada em ambientes residenciais e comerciais de alto padrão.</p>
 
         <div class="grid">
-            <div class="card" style="opacity: 0.6;">
-                <h3>Casos em breve</h3>
-                <p>Em desenvolvimento. Histórias de sucesso estarão disponíveis em breve.</p>
+            <div class="case-card">
+                <div class="case-status">Implementado</div>
+                <h3>Mansão Premium - 9 Suites</h3>
+                <p>Infraestrutura de rede de alta cobertura distribuída em propriedade de grande porte. Ambiente preparado para integração com sistemas de automação residencial.</p>
+                <span class="case-tag">Wi-Fi 6 • Cobertura Distribuída • Ilha 54, PR</span>
             </div>
+            <div class="case-card">
+                <div class="case-status">Implementado</div>
+                <h3>Resort Premium - Tayaya</h3>
+                <p>Solução de rede corporativa para ambiente de pousada de luxo. Infraestrutura escalável e confiável para hospedagem de alto padrão com cobertura total das áreas comuns e suites.</p>
+                <span class="case-tag">Wi-Fi 6E • Redundância • Ribeirão Claro, PR</span>
+            </div>
+            <div class="case-card">
+                <div class="case-status">Implementado</div>
+                <h3>Condomínio Premium - Royal Park</h3>
+                <p>Múltiplas implementações em residências premium do condomínio. Rede de alta performance com infraestrutura preparada para suportar ambientes exigentes e sistemas de IoT.</p>
+                <span class="case-tag">Wi-Fi 6+ • Multi-Residências • Ourinhos, SP</span>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- COBERTURA -->
+<section id="cobertura" class="section dark">
+    <div class="container">
+        <h2>Área de Atendimento</h2>
+        <p class="section-intro">Atendemos a região de Ourinhos e proximidades com excelência e comprometimento.</p>
+        
+        <div class="map-container">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14931.145450463968!2d-49.8694!3d-22.9692!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94b9b4f1c1c1c1c1%3A0x1c1c1c1c1c1c1c1c!2sOurinhos%2C%20SP!5e0!3m2!1spt-BR!2sbr!4v1234567890123" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+        
+        <div class="coverage-info">
+            <p>Se sua residência está na região de Ourinhos, podemos oferecer uma solução de infraestrutura de rede personalizada e de alta qualidade.</p>
+            <a href="#contato" class="btn" style="margin-top: 24px;">Consultar Disponibilidade</a>
         </div>
     </div>
 </section>
@@ -101,8 +218,45 @@
 </section>
 
 <!-- FOOTER -->
-<footer>
-    INFRAWIFI © 2026 - Todos os direitos reservados
+<footer class="footer">
+    <div class="footer-content">
+        <div class="footer-section">
+            <h4>InfraWiFi</h4>
+            <p>Infraestrutura de rede profissional para residências exigentes.</p>
+        </div>
+        
+        <div class="footer-section">
+            <h4>Navegação</h4>
+            <ul>
+                <li><a href="#servicos">Serviços</a></li>
+                <li><a href="#sobre">Sobre</a></li>
+                <li><a href="#profissional">Profissional</a></li>
+                <li><a href="#cases">Cases</a></li>
+                <li><a href="#cobertura">Cobertura</a></li>
+                <li><a href="#contato">Contato</a></li>
+            </ul>
+        </div>
+        
+        <div class="footer-section">
+            <h4>Contato</h4>
+            <p>
+                <a href="https://wa.me/5514997229067" target="_blank" rel="noopener noreferrer">WhatsApp</a><br>
+                <a href="mailto:contato@infrawifi.com.br">contato@infrawifi.com.br</a>
+            </p>
+        </div>
+        
+        <div class="footer-section">
+            <h4>Redes Sociais</h4>
+            <p>
+                <a href="#" aria-label="Instagram INFRAWIFI">Instagram</a><br>
+                <a href="#" aria-label="LinkedIn INFRAWIFI">LinkedIn</a>
+            </p>
+        </div>
+    </div>
+    
+    <div class="footer-bottom">
+        <p>&copy; 2026 InfraWiFi. Todos os direitos reservados.</p>
+    </div>
 </footer>
 
 <script src="assets/js/base.js"></script>
