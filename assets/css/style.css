@@ -940,3 +940,8 @@ a:focus-visible, button:focus-visible { outline: 2px solid var(--accent); outlin
   html { scroll-behavior: auto; }
   *, *::before, *::after { transition: none !important; animation: none !important; }
 }
+
+/* Original supplied brand artwork, shared by header, hero and footer. */
+.nav-brand-image { width: 46px; height: 49px; object-fit: contain; display: block; }
+.footer-brand-image { width: 110px; height: auto; display: block; margin: 0 auto 16px; }
+.logo { width: clamp(160px, 17vw, 240px); }
