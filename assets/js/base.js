@@ -52,7 +52,7 @@ document.addEventListener('DOMContentLoaded', function() {
         const offsetTop = target.offsetTop - 80; // 80px de offset para navbar fixa
         window.scrollTo({
           top: offsetTop,
-          behavior: 'smooth'
+          behavior: window.matchMedia('(prefers-reduced-motion: reduce)').matches ? 'auto' : 'smooth'
         });
       }
     });

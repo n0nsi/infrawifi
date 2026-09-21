@@ -5,7 +5,7 @@ import { fileURLToPath } from 'node:url';
 export const root = resolve(dirname(fileURLToPath(import.meta.url)), '..');
 export const copies = [
   'index.html', 'assets/css/style.css', 'assets/js/base.js',
-  'assets/img/favicon.ico', 'assets/img/hero.png',
+  'assets/img/favicon.ico', 'assets/img/hero.webp',
   'assets/img/logo.png', 'assets/img/muriloprestes.png'
 ];
 export const publicFiles = ['_headers'];
